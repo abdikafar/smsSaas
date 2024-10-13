@@ -17,9 +17,10 @@ class InstallerMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($this->alreadyInstalled() || explode('/', $request->route() ? $request->route()->uri() : '')[0] !== 'install') {
+//        dd('test2.....');
+        /*if ($this->alreadyInstalled() || explode('/', $request->route() ? $request->route()->uri() : '')[0] !== 'install') {
             abort(404);
-        }
+        }*/
         return $next($request);
     }
 

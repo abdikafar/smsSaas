@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => env('TIMEZONE', 'Asia/Kolkata'),
+    'timezone' => env('TIMEZONE', 'Africa/Mogadishu'),
 
     /*
     |--------------------------------------------------------------------------

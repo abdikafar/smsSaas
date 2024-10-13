@@ -37,7 +37,7 @@ class AddSuperAdminSeeder extends Seeder {
 //        ]);
 
         SystemSetting::upsert([
-            ["name" => "time_zone", "data" => "Asia/Kolkata", "type" => "string"],
+            ["name" => "time_zone", "data" => "Africa/Mogadishu", "type" => "string"],
             ["name" => "date_format", "data" => "d-m-Y", "type" => "date"],
             ["name" => "time_format", "data" => "h:i A", "type" => "time"],
             ["name" => "theme_color", "data" => "#22577A", "type" => "string"],
