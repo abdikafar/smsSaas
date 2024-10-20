@@ -147,7 +147,7 @@
                                 <th scope="col" data-field="name">{{ __('name') }}</th>
                                 <th scope="col" data-field="support_email">{{__('school').' '.__('email')}}</th>
                                 <th scope="col" data-field="support_phone">{{__('school').' '.__('phone')}}</th>
-                                <th scope="col" data-field="tagline">{{ __('tagline') }}</th>
+{{--                                <th scope="col" data-field="tagline">{{ __('tagline') }}</th>--}}
                                 <th scope="col" data-field="address">{{ __('address') }}</th>
                                 <th scope="col" data-field="admin_id" data-visible="false">{{ __('admin').' '.__('id')}}</th>
                                 <th scope="col" data-field="user" data-formatter="schoolAdminFormatter">{{ __('school').' '.__('admin') }}</th>
@@ -178,7 +178,7 @@
                     <div class="modal-body">
                         <div class="row">
 
-                        
+
                         <div class="form-group col-sm-12 col-md-6">
                             <label for="edit_school_name">{{ __('name') }} <span class="text-danger">*</span></label>
                             <input type="text" name="edit_school_name" id="edit_school_name" placeholder="{{__('schools')}}" class="form-control" required>
@@ -204,7 +204,7 @@
                             <label for="edit_school_support_phone">{{ __('school').' '.__('phone') }} <span class="text-danger">*</span></label>
                             <input type="number" name="edit_school_support_phone" min="0" id="edit_school_support_phone" placeholder="{{__('support').' '.__('phone')}}" class="form-control remove-number-increment" required>
                         </div>
-                        
+
                         <div class="form-group col-sm-12 col-md-3">
                             <label for="edit_school_tagline">{{ __('tagline')}} <span class="text-danger">*</span></label>
                             <textarea name="edit_school_tagline" id="edit_school_tagline" cols="30" rows="3" class="form-control" placeholder="{{__('tagline')}}" required></textarea>
@@ -320,5 +320,10 @@
         function successFunction() {
             $('#editAdminModal').modal('hide');
         }
+        window.trans = {
+            "Active": "{{ __('Active') }}",
+            "Inactive": "{{ __('Inactive') }}"
+            // Add other translations as needed
+        };
     </script>
 @endsection

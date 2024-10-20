@@ -239,3 +239,18 @@
         </div>
     </div>
 @endsection
+
+@section('js')
+    <script>
+        window.trans = {
+            "Current Cycle" : "{{ __('current_cycle') }}",
+            "Paid": "{{ __('paid') }}",
+            "Over Due": "{{ __('over_due') }}",
+            "Failed": "{{ __('failed') }}",
+            "Pending": "{{ __('pending') }}",
+            "Next Billing Cycle": "{{ __('next_billing_cycle') }}",
+            "Unpaid": "{{ __('unpaid') }}",
+            "Bill Not Generated": "{{ __('bill_not_generated') }}",
+        };
+    </script>
+@endsection

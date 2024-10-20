@@ -194,7 +194,8 @@ class SchoolController extends Controller {
         $showDeleted = request('show_deleted');
         $today_date = Carbon::now()->format('Y-m-d');
 
-        $sql = $this->schoolsRepository->builder()->with('user:id,first_name,last_name,email,image,mobile')->with(['subscription' => function($q) use($today_date){
+        $sql = $this->schoolsRepository->builder()->with('user:id,first_name,last_name,email,image,mobile')
+            ->with(['subscription' => function($q) use($today_date){
             $q->whereDate('start_date','<=',$today_date)->whereDate('end_date','>=',$today_date);
         }])->with('subscription.package')
             //search query
@@ -272,7 +273,7 @@ class SchoolController extends Controller {
             } else {
                 $tempRow['active_plan'] = '-';
             }
-            
+
             // $tempRow['operate'] = $operate;
             $tempRow['operate'] = BootstrapTableService::menuItem($operate);
             $rows[] = $tempRow;
@@ -618,8 +619,8 @@ class SchoolController extends Controller {
                 ResponseService::logErrorResponse($e, "School Controller -> Registration method");
                 ResponseService::errorResponse();
             }
-            
-            
+
+
         }
     }
 

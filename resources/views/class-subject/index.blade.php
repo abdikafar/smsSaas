@@ -67,3 +67,12 @@
         </div>
     </div>
 @endsection
+@section('js')
+    <script>
+        window.trans = {
+            "Yes": "{{__('Semester')}}",
+            "No": "{{__('Semester')}}",
+            // Add other translations as needed
+        };
+    </script>
+@endsection

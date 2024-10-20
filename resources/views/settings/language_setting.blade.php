@@ -157,5 +157,10 @@
                 window.location.reload();
             }, 1000);
         }
+        window.trans = {
+            "Yes": "{{__('Is RTL')}}",
+            "No": "{{__('Is RTL')}}",
+            // Add other translations as needed
+        };
     </script>
 @endsection

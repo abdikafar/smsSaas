@@ -127,5 +127,10 @@
                 window.location.reload();
             }, 3000);
         }
+        window.trans = {
+            "Yes": "{{__('default')}}",
+            "No": "{{__('default')}}",
+            // Add other translations as needed
+        };
     </script>
 @endsection

@@ -136,3 +136,12 @@
         </div>
     </div>
 @endsection
+@section('js')
+    <script>
+        window.trans = {
+            "Active": "{{ __('status') }}",
+            "Inactive": "{{ __('status') }}"
+            // Add other translations as needed
+        };
+    </script>
+@endsection

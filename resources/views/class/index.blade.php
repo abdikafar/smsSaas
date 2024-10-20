@@ -168,5 +168,10 @@
             $('#default-section-div').show();
             $('#stream-wise-section-div').hide();
         }
+        window.trans = {
+            "Yes": "{{__('Semester')}}",
+            "No": "{{__('Semester')}}",
+            // Add other translations as needed
+        };
     </script>
 @endsection

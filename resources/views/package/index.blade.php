@@ -106,6 +106,11 @@
                 })
             })
         })
+        window.trans = {
+            "postpaid": "{{ __('postpaid') }}",
+            "prepaid": "{{ __('prepaid') }}"
+            // Add other translations as needed
+        };
 
     </script>
 @endsection
